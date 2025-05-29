@@ -5933,7 +5933,7 @@ if __name__ == "__main__":
     if args.listen:
         server_name = "0.0.0.0"
     if len(server_name) == 0:
-        server_name = os.getenv("SERVER_NAME", "localhost")      
+        server_name = os.getenv("SERVER_NAME", "0.0.0.0")      
     demo = create_ui()
     if args.open_browser:
         import webbrowser 
